@@ -10,3 +10,4 @@ echo "已添加挖矿码 $inputinfo"
 cd /root/bcdn/BerryMiner_v1_0/server
 ./bcdn_check.sh
 fi
+
