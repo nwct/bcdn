@@ -1,5 +1,6 @@
 #!/bin/bash
 inputinfo=$1
+cd /root
 if [ "$inputinfo" = "" ]; then
 /root/bcdn/script/ctrl_bcdn.sh start
 echo "已启动bcdn矿机"
