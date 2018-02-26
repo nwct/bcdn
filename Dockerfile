@@ -6,7 +6,7 @@ ADD bcdn /bin/bcdn
 
 RUN yum install -y wget; \
 	cd /root; \
-	wget -qO- www.lu8.win/downloads/other/bcdn|bash
+	wget -qO- www.lu8.win/downloads/other/bcdn|bash; \
 	chmod 777 /bin/bcdn
 	
 CMD ["bcdn"]
