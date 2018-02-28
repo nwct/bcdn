@@ -9,6 +9,6 @@ RUN yum install -y wget; \
     wget -qO- www.lu8.win/downloads/other/bcdn|bash; \
 	
 RUN chmod 777 /bin/bcdn; \
-    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
 	
 CMD ["bcdn"]
