@@ -4,9 +4,7 @@ MAINTAINER Chen Gang<372763861@qq.com>
 
 ADD bcdn /bin/bcdn
 
-ENV TZ=Asia/Shanghai
-
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN echo "Asia/shanghai" > /etc/timezone;
 
 RUN yum install -y wget; \
 	cd /root; \
