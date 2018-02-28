@@ -2,10 +2,10 @@
 inputinfo=$1
 cd /root
 if [ "$inputinfo" = "" ]; then
-/root/bcdn/script/ctrl_bcdn.sh start
+/root/bcdn/bcdn.sh start
 echo "已启动bcdn矿机"
 else
 echo -ne "$inputinfo" > /root/bcdn/conf/code.txt
 echo "已添加挖矿码 $inputinfo"
-/root/bcdn/script/ctrl_bcdn.sh start
+/root/bcdn/bcdn.sh start
 fi
