@@ -7,6 +7,6 @@ else
 echo -ne "$inputinfo" > /root/bcdn/conf/code.txt
 echo "已添加挖矿码 $inputinfo"
 /root/bcdn/bcdn.sh start
-tail -f /root/bcdn/nohup.out
+/root/bcdn/bcdn.sh log
 fi
 
