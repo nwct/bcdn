@@ -12,3 +12,4 @@ RUN apt-get update; \
 	chmod 777 /bin/bcdn
 
 CMD ["bcdn"]
+
