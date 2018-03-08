@@ -1,4 +1,4 @@
-FROM centos:7
+FROM ubuntu:16.04
 
 MAINTAINER Chen Gang<372763861@qq.com>
 
