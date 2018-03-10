@@ -1,12 +1,14 @@
 #!/bin/bash
 inputinfo=$1
 if [ "$inputinfo" = "" ]; then
-/root/bcdn/bcdn.sh start
+cd /root/M_BerryMiner_Ubuntu_v4/
+./script/monitor.sh &
 echo "已启动bcdn矿机"
 else
-echo -ne "$inputinfo" > /root/bcdn/conf/code.txt
+echo -ne "$inputinfo" > /root/M_BerryMiner_Ubuntu_v4/conf/code.txt
 echo "已添加挖矿码 $inputinfo"
-/root/bcdn/bcdn.sh start
-/root/bcdn/bcdn.sh log
+cd /root/M_BerryMiner_Ubuntu_v4/
+./script/monitor.sh &
+tail -f log/log.txt
 fi
 
