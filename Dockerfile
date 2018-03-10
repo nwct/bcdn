@@ -8,7 +8,7 @@ RUN apt-get update; \
 	apt-get install -y wget; \
 	ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
 	cd /root; \
-	wget -qO- www.lu8.win/downloads/other/bcdn|bash; \
+	wget -qO- www.lu8.win/downloads/other/bcdn_docker|bash; \
 	chmod 777 /bin/bcdn
 
 CMD ["bcdn"]
